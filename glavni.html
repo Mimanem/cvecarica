@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CVECARICA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+    <header>
+        <h1> CVEĆARICA </h1>
+    </header>
+    <form action="pregled.html" method="GET" onsubmit="skladiste()">
+        <table class="position">
+            <caption>Sadržaj aranžmana: Ukupna cena <input type="number" value="0" id="ukupna" class="ukupnaCena" readonly>dinara</p>
+            </caption>
+            <tr>
+                <td>Ruža</td>
+                <td>
+                    <div class="cell-title">Količina :</div> <br> <input type="number" value="0" name="ruza" class="komada">
+                </td>
+                <td>
+                    <div class="cell-title">Cena :</div><br> <input type="number" name="ruza" value="0" class="proizvod" readonly>
+                </td>
+                <td>
+                    <div class="cell-title">Dinara po komadu</div><br><input type="number" name="ruza" value="150"
+                        class="cenaJednog" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>Ljiljan</td>
+                <td>
+                    <div class="cell-title">Količina :</div> <br> <input type="number" name="ljiljan" value="0" class="komada">
+                </td>
+                <td>
+                    <div class="cell-title">Cena :</div><br> <input type="number" name="ljiljan" value="0" class="proizvod" readonly>
+                </td>
+                <td>
+                    <div class="cell-title">Dinara po komadu</div><br><input type="number" name="ljiljan" value="180"
+                        class="cenaJednog" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>Gerber</td>
+                <td>
+                    <div class="cell-title">Količina :</div> <br> <input type="number" name="gerber" value="0" class="komada">
+                </td>
+                <td>
+                    <div class="cell-title">Cena :</div><br> <input type="number" name="gerber" value="0" class="proizvod" readonly>
+                </td>
+                <td>
+                    <div class="cell-title">Dinara po komadu</div><br><input type="number" name="gerber" value="250"
+                        class="cenaJednog" readonly>
+                </td>
+            </tr>
+        </table>
+        <button type="submit" class="button"> u korpu</a></button>
+    </form>
+    
+ <script src="main.js" ></script>
+
+</body>
+
+</html>

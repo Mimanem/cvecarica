@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CVECARICA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+    <header>
+        <h1> Vaša Narudžbina </h1>
+    </header>
+    <h2></h2>
+    <form action="potvrda.html" method="GET" onsubmit="skladiste2()">
+        <table class="position">
+            <caption>Sadržaj aranžmana: Ukupna cena <input type="number" id="ukupna" class="ukupnaCena" readonly>dinara</p>
+            </caption>
+            <tr>
+                <td>Ruža</td>
+                <td>
+                    <div class="cell-title">Količina :</div> <br> <input type="number" name="ruza" class="komada"
+                        readonly>
+                </td>
+                <td>
+                    <div class="cell-title">Cena :</div><br> <input type="number" name="ruza" class="proizvod" readonly>
+                </td>
+
+            </tr>
+            <tr>
+                <td>Ljiljan</td>
+                <td>
+                    <div class="cell-title">Količina :</div> <br> <input type="number" name="ljiljan" class="komada"
+                        readonly>
+                </td>
+                <td>
+                    <div class="cell-title">Cena :</div><br> <input type="number" name="ljiljan" class="proizvod"
+                        readonly>
+                </td>
+
+            </tr>
+            <tr>
+                <td>Gerber</td>
+                <td>
+                    <div class="cell-title">Količina :</div> <br> <input type="number" name="gerber" class="komada"
+                        readonly>
+                </td>
+                <td>
+                    <div class="cell-title">Cena :</div><br> <input type="number" name="gerber" class="proizvod"
+                        readonly>
+                </td>
+            </tr>
+        </table>
+        <button type="submit" class="button"> potvrdi kupovinu</a></button>
+        <br>
+        <label> Korisnik :<input type="text" id="ime" placeholder="Ime i Prezime" name="user"></label><br>
+        <label> <input type="radio" id="visa" name="creditcard">Visa</label><br>
+        <label> <input type="radio" id="mastercard" name="creditcard">Mastercard</label><br>
+        <label><input type="checkbox" id="dostava" onchange="dostavaplus()">Uključiti dostavu +500 din. </label>
+    </form>
+
+    <script src="main2.js"></script>
+
+</body>
+
+</html>

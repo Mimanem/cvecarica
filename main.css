@@ -1,0 +1,102 @@
+html {
+    background-color: #f3e3e9;
+    background-image: url(pozadina.jpg);
+    background-size: cover;
+    background-blend-mode: hard-light;
+}
+
+.position {
+    margin-left: 20%;
+    background-color: aquamarine;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    color: darkgreen;
+    margin-top: 9%;
+}
+
+table, th, td, caption {
+    text-align: center;
+    border: 1px solid rgb(77, 224, 19);
+    color: green;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.button {
+    background-color: aqua;
+    border-radius: 20%;
+    color: darkblue;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 35%;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+th, td {
+    width: auto;
+    height: auto;
+}
+
+td:first-child {
+    background-color: rgb(238, 220, 187);
+    color: darkgreen;
+}
+input {
+    font-size: large;
+    text-align: center;
+}
+.cell-title {
+    height: 9px;
+}
+label {height: 9px;
+ margin-left: 40%; 
+ color: blue;
+ font-style: italic;
+ font-weight: normal;
+ font-size: 18px;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.potvrda {
+    margin-top: 15%;
+}
+
+@media only screen and (max-width: 600px) {
+   
+    /* Force table to not be like tables anymore */
+    caption, table, thead, tbody, th, td, tr {
+        display: block;
+        font-weight: normal;
+    } 
+    tr:nth-of-type(odd) {
+        background: #eee;
+        color: darkblue;
+    }
+    .position {
+        margin-left: 0%;
+    }
+    .button {
+        margin-left: 0%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    caption, table, thead, tbody, th, td, tr {
+        font-weight: normal;
+    }
+    .button {
+        margin-left: 0%;
+    }
+    .position {
+        margin-left: 0%;
+    }
+  
+    }
